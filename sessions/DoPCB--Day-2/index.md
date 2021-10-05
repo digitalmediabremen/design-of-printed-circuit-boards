@@ -14,7 +14,7 @@ size: 4:3
 
 ### 4-step process
 
-- physical protyping ( e.g breadboard )
+- physical prototyping ( e.g breadboard )
 - schematics
 - symbols to footprints
 - PCB design
@@ -62,20 +62,6 @@ size: 4:3
 - [digikey](https://www.digikey.de)
 - [arrow](https://www.arrow.com)
 
----
-
-### PCB design
-
-- layers
-    - @maybe 2-layer- vs 4-layer-designs
-- routing traces ( + semi-auto routing ) + ratnest
-- Design Rule Check (DRC)
-- edge cuts + *mounting holes* or PCB in context
-    - @maybe 3D view
-- ground fill + signal planes
-- @maybe add custom components
-- @maybe adding custom silkscreen layers
-
 #### packages
 
 usually specific functional components have their own package description systems:
@@ -87,6 +73,20 @@ usually specific functional components have their own package description system
 - Quad Flat No-leads (QNF) #SMD #EVIL
 
 see [List of integrated circuit packaging types](https://en.wikipedia.org/wiki/List_of_integrated_circuit_packaging_types)
+
+---
+
+### PCB design
+
+- layers
+    - @maybe 2-layer- vs 4-layer-designs
+- routing traces ( + semi-auto routing ) + ratsnest
+- Design Rule Check (DRC)
+- edge cuts + *mounting holes* or PCB in context
+    - @maybe 3D view
+- ground fill + signal planes
+- @maybe add custom components
+- @maybe adding custom silkscreen layers
 
 ---
 
