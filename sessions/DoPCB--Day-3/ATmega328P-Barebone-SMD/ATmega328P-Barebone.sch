@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
-U 1 1 615C7671
-P 5300 4000
-F 0 "U1" H 5350 4050 50  0000 R CNN
-F 1 "ATmega328P-PU" H 5550 3950 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm_Socket" H 5300 4000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5300 4000 50  0001 C CNN
-	1    5300 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR011
 U 1 1 615CF5A7
 P 5300 5500
@@ -52,8 +41,9 @@ U 1 1 615D692F
 P 5700 2200
 F 0 "C1" H 5792 2246 50  0000 L CNN
 F 1 "100nF" H 5792 2155 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 5700 2200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5700 2200 50  0001 C CNN
 F 3 "~" H 5700 2200 50  0001 C CNN
+F 4 "C49678" H 5700 2200 50  0001 C CNN "JLCPCB Part #"
 	1    5700 2200
 	1    0    0    -1  
 $EndComp
@@ -88,7 +78,7 @@ U 1 1 615DB577
 P 7600 2250
 F 0 "J1" H 7650 2567 50  0000 C CNN
 F 1 "ISP" H 7650 2476 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7600 2250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7600 2250 50  0001 C CNN
 F 3 "~" H 7600 2250 50  0001 C CNN
 	1    7600 2250
 	1    0    0    -1  
@@ -167,8 +157,9 @@ U 1 1 615E18C4
 P 6250 4150
 F 0 "R1" H 6309 4196 50  0000 L CNN
 F 1 "10K" H 6309 4105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6250 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6250 4150 50  0001 C CNN
 F 3 "~" H 6250 4150 50  0001 C CNN
+F 4 "C17414" H 6250 4150 50  0001 C CNN "JLCPCB Part #"
 	1    6250 4150
 	1    0    0    -1  
 $EndComp
@@ -184,8 +175,9 @@ U 1 1 615EDB3E
 P 6850 3450
 F 0 "Y1" V 6804 3581 50  0000 L CNN
 F 1 "Crystal" V 6895 3581 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 6850 3450 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 6850 3450 50  0001 C CNN
 F 3 "~" H 6850 3450 50  0001 C CNN
+F 4 "C12674" V 6850 3450 50  0001 C CNN "JLCPCB Part #"
 	1    6850 3450
 	0    1    1    0   
 $EndComp
@@ -195,21 +187,11 @@ U 1 1 615EF450
 P 7300 3150
 F 0 "C2" V 7071 3150 50  0000 C CNN
 F 1 "22pF" V 7162 3150 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm" H 7300 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7300 3150 50  0001 C CNN
 F 3 "~" H 7300 3150 50  0001 C CNN
+F 4 "C1804" V 7300 3150 50  0001 C CNN "JLCPCB Part #"
 	1    7300 3150
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 615F018A
-P 7300 3800
-F 0 "C3" V 7529 3800 50  0000 C CNN
-F 1 "22pF" V 7438 3800 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm" H 7300 3800 50  0001 C CNN
-F 3 "~" H 7300 3800 50  0001 C CNN
-	1    7300 3800
-	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	5900 3500 6000 3500
@@ -374,7 +356,7 @@ U 1 1 6162C3BB
 P 7450 5400
 F 0 "H1" H 7550 5446 50  0000 L CNN
 F 1 "MountingHole" H 7550 5355 50  0000 L CNN
-F 2 "" H 7450 5400 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7450 5400 50  0001 C CNN
 F 3 "~" H 7450 5400 50  0001 C CNN
 	1    7450 5400
 	1    0    0    -1  
@@ -382,12 +364,12 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6162C8FF
-P 7450 5650
-F 0 "H2" H 7550 5696 50  0000 L CNN
-F 1 "MountingHole" H 7550 5605 50  0000 L CNN
-F 2 "" H 7450 5650 50  0001 C CNN
-F 3 "~" H 7450 5650 50  0001 C CNN
-	1    7450 5650
+P 8250 5400
+F 0 "H2" H 8350 5446 50  0000 L CNN
+F 1 "MountingHole" H 8350 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8250 5400 50  0001 C CNN
+F 3 "~" H 8250 5400 50  0001 C CNN
+	1    8250 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -396,7 +378,7 @@ U 1 1 6162CBA7
 P 7450 5650
 F 0 "H3" H 7550 5696 50  0000 L CNN
 F 1 "MountingHole" H 7550 5605 50  0000 L CNN
-F 2 "" H 7450 5650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7450 5650 50  0001 C CNN
 F 3 "~" H 7450 5650 50  0001 C CNN
 	1    7450 5650
 	1    0    0    -1  
@@ -404,12 +386,38 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 6162CBFC
-P 7450 5900
-F 0 "H4" H 7550 5946 50  0000 L CNN
-F 1 "MountingHole" H 7550 5855 50  0000 L CNN
-F 2 "" H 7450 5900 50  0001 C CNN
-F 3 "~" H 7450 5900 50  0001 C CNN
-	1    7450 5900
+P 8250 5650
+F 0 "H4" H 8350 5696 50  0000 L CNN
+F 1 "MountingHole" H 8350 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8250 5650 50  0001 C CNN
+F 3 "~" H 8250 5650 50  0001 C CNN
+	1    8250 5650
 	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 615DB63A
+P 5300 4000
+F 0 "U1" H 5300 4100 50  0000 C CNN
+F 1 "ATmega328P-AU" H 5300 4000 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5300 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5300 4000 50  0001 C CNN
+F 4 "C14877" H 5300 4000 50  0001 C CNN "JLCPCB Part #"
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 3000
+NoConn ~ 4700 3100
+$Comp
+L Device:C_Small C3
+U 1 1 615F8DD5
+P 7300 3800
+F 0 "C3" V 7071 3800 50  0000 C CNN
+F 1 "22pF" V 7162 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7300 3800 50  0001 C CNN
+F 3 "~" H 7300 3800 50  0001 C CNN
+F 4 "C1804" V 7300 3800 50  0001 C CNN "JLCPCB Part #"
+	1    7300 3800
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
