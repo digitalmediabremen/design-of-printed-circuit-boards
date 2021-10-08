@@ -5,6 +5,6 @@
 - christoph :: smart-switch with LCDisplay
 - givan :: ATmega328P-based USB device that acts as a computer keyboard
 - kamela :: NFC-powered board with LED
-- preben :: ???
-- mon :: ???
-- hui :: ???
+- hui :: PCB equipped with pressure sensors and a stepper motor attached to a chair that pokes a person if they remain seated for too long 
+- preben :: DNF
+- mon :: DNF
