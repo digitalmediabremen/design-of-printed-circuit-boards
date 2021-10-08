@@ -24,4 +24,6 @@ please upload the files in a ZIP file named `dopcb--` + your first name + last n
 
 ### fallback
 
-deliver an anthropomorphic design including with an ATmega328P MCU + 1 rotarty encoder ( with interrupts ) + 4 LEDs indivdually controllable via MCU. 
+if you really do not know what you want to do. you can do this:
+
+deliver an anthropomorphic design including a ATmega328P MCU ( programmable via ISP ) + 1 rotary encoder ( with interrupts ) + 4 LEDs indivdually controllable via MCU. 
