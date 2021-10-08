@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x05
+#
+DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x05" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# My_Audio_Connector_STX-3680-5NB
+#
+DEF My_Audio_Connector_STX-3680-5NB J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "My_Audio_Connector_STX-3680-5NB" 650 200 50 H V L CNN
+F2 "STX36805NB" 650 100 50 H I L CNN
+F3 "http://www.kycon.com/Pub_Eng_Draw/STX-3680-5NB.pdf" 650 0 50 H I L CNN
+F4 "Phone Connectors 3.5MM VERT MNT 3POLE 5P NOT THRDED BLK" 650 -100 50 H I L CNN "Description"
+F5 "16.6" 650 -200 50 H I L CNN "Height"
+F6 "Kycon" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "STX-3680-5NB" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "806-STX-3680-5NB" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Kycon/STX-3680-5NB?qs=muAHfP4b4FLHShsAn4TCrg%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+X R 1 0 0 200 R 50 50 0 0 P
+X RN 2 0 -100 200 R 50 50 0 0 P
+X TN 3 0 -200 200 R 50 50 0 0 P
+X T 4 800 0 200 L 50 50 0 0 P
+X S 5 800 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

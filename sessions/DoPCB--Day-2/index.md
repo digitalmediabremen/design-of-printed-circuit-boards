@@ -78,15 +78,60 @@ see [List of integrated circuit packaging types](https://en.wikipedia.org/wiki/L
 
 ### PCB design
 
-- layers
-    - @maybe 2-layer- vs 4-layer-designs
+- layers ( @maybe 2-layer- vs 4-layer-designs )
 - routing traces ( + semi-auto routing ) + ratsnest
 - Design Rule Check (DRC)
-- edge cuts + *mounting holes* or PCB in context
-    - @maybe 3D view
+- edge cuts + *mounting holes* or PCB in context ( + 3D view )
 - ground fill + signal planes
 - @maybe add custom components
 - @maybe adding custom silkscreen layers
+
+---
+
+### Custom Components
+
+- either create your own or find it in a database
+    - create your own symbol with *Symbol Editor*
+    - create your own footrpint with *Footprint Editor*
+- there are many symbol+footprint libraries or individual symbols + footprints available on the internet e.g:
+    - [DigiKey KiCad Library](https://github.com/Digi-Key/digikey-kicad-library)
+    - [SnapEDA](https://www.snapeda.com)
+    - ***ALWAYS MAKE SURE TO CONSOLUT THE COMPONENTS DATASHEET!!!***
+
+---
+
+#### adding custom components
+
+- add `library` folder to project folder
+- copy symbol + footprint files to folder
+- `.lib` symbols + `.kicad_mod` footprints  + `.mod` for legacy footprint files
+- `.mod` can be converted to `.kicad_mod` with *Symbol Editor*
+
+---
+
+##### symbol
+
+- in *KiCad* application open `Preferences > Manage Symbol Libraries…`
+- choose tab `Project Specific Libraries` 
+- add new entry with `+` icon
+- choose `Nickname`
+- choose `Library Path` by clicking on folder and navigating to `.lib` file 
+    - @hint replace absolute library path with `${KIPRJMOD}` to make path relative ( e.g `${KIPRJMOD}/library/STX-3680-5NB.lib` )
+    - …
+- symbol is now available
+
+---
+
+##### footprint
+
+- in *KiCad* application open `Preferences > Manage Footprint Libraries…`
+- choose tab `Project Specific Libraries` 
+- add new entry with `+` icon
+- choose `Nickname`
+- choose `Library Path` by clicking on folder and navigating to `.lib` file 
+    - @hint replace absolute library path with `${KIPRJMOD}` to make path relative ( e.g `${KIPRJMOD}/library/STX-3680-5NB.lib` )
+    - …
+- footprint is now available
 
 ---
 
